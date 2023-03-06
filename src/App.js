@@ -1,11 +1,16 @@
 import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Cardgroup from './components/Cardgroup';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar />
 
-      </header>
+      <Hero />
+
+      <Cardgroup />
     </div>
   );
 }
