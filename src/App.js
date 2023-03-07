@@ -1,12 +1,13 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Cardgroup from './components/Cardgroup';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Nav />
 
       <Hero />
 

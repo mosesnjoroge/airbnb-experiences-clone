@@ -4,10 +4,12 @@ export default function Hero () {
 
   return (
 
-    <h3>
-
-    </h3>
-
+    <div>
+      <h3>
+        Online Experiences
+      </h3>
+      <p>Join unique interactive activities led by one-of-a-kind hosts-all without leaving home</p>
+    </div>
 
   )
 
