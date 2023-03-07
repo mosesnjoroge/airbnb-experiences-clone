@@ -6,7 +6,7 @@ export default function Cardgroup () {
 
   return (
     <CardGroup className = 'container'>
-      <Card >
+      <Card>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
           <Card.Title>Rating goes here - </Card.Title>
@@ -19,7 +19,7 @@ export default function Cardgroup () {
         </Card.Body>
       </Card>
 
-      <Card >
+      <Card>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
           <Card.Title>Rating goes here -</Card.Title>
@@ -45,9 +45,6 @@ export default function Cardgroup () {
         </Card.Body>
       </Card>
     </CardGroup>
-
-
-
   );
 
 }

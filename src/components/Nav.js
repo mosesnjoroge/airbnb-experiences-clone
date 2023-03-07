@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from './components/airbnblogo.jpeg'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
