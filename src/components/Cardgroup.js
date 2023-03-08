@@ -28,9 +28,8 @@ export default function Cardgroup () {
   return (
     <CardGroup className = 'container'>
       <Card>
-        <Card.Img variant="top">
-          <AdvancedImage cldImg={myImage} />
-        </Card.Img>
+        {/* cloudinary render image */}
+        <AdvancedImage cldImg={myImage} />
         <Card.Body>
           <Card.Title>Rating goes here - </Card.Title>
           <Card.Text>
@@ -43,7 +42,7 @@ export default function Cardgroup () {
       </Card>
 
       <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <AdvancedImage cldImg={myImage} />
         <Card.Body>
           <Card.Title>Rating goes here -</Card.Title>
           <Card.Text>
@@ -56,7 +55,7 @@ export default function Cardgroup () {
       </Card>
 
       <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
+        <AdvancedImage cldImg={myImage} />
         <Card.Body>
           <Card.Title>Rating goes here -</Card.Title>
           <Card.Text>
