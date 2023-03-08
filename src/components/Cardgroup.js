@@ -1,8 +1,17 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
+import {Cloudinary} from "@cloudinary/url-gen";
 
 export default function Cardgroup () {
+
+  // Create a Cloudinary instance and setting cloud name.
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'dtxxea3qi'
+    }
+  });
+
 
   return (
     <CardGroup className = 'container'>
