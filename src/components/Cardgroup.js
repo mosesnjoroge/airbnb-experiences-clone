@@ -4,8 +4,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {AdvancedImage} from '@cloudinary/react';
 import {fill} from "@cloudinary/url-gen/actions/resize";
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function Cardgroup () {
 
@@ -22,16 +22,16 @@ export default function Cardgroup () {
   // Resize to 250 x 250 pixels using the 'fill' crop mode.
    myImage.resize(fill().width(250).height(250));
 
-
-
-
   return (
     <CardGroup className = 'container'>
       <Card>
         {/* cloudinary render image */}
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
-          <Card.Title>Rating goes here - </Card.Title>
+
+          <Card.Title>
+            <FontAwesomeIcon icon={faStar} />
+          </Card.Title>
           <Card.Text>
             Life lessons with katie Zaferes
           </Card.Text>
@@ -44,7 +44,9 @@ export default function Cardgroup () {
       <Card>
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
-          <Card.Title>Rating goes here -</Card.Title>
+          <Card.Title>
+            <FontAwesomeIcon icon={faStar} />
+          </Card.Title>
           <Card.Text>
             Learn Wedding Photography
           </Card.Text>
@@ -57,7 +59,9 @@ export default function Cardgroup () {
       <Card>
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
-          <Card.Title>Rating goes here -</Card.Title>
+          <Card.Title>
+            <FontAwesomeIcon icon={faStar} />
+          </Card.Title>
           <Card.Text>
             Group Mountain Biking
           </Card.Text>
