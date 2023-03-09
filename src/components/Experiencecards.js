@@ -28,7 +28,6 @@ export default function ExperienceCards () {
         {/* cloudinary render image */}
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
-
           <Card.Title>
             <p><FontAwesomeIcon icon={faStar}/>5(6)
               Online
@@ -38,7 +37,7 @@ export default function ExperienceCards () {
             Life lessons with katie Zaferes
           </Card.Text>
           <Card.Text>
-          <strong> From $136</strong> / person
+            <strong> From $136</strong> / person
           </Card.Text>
         </Card.Body>
       </Card>
