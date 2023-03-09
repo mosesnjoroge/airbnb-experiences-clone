@@ -7,7 +7,7 @@ import {fill} from "@cloudinary/url-gen/actions/resize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
-export default function Cardgroup () {
+export default function ExperienceCards () {
 
   // Create a Cloudinary instance and setting cloud name.
   const cld = new Cloudinary({
@@ -30,7 +30,9 @@ export default function Cardgroup () {
         <Card.Body>
 
           <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+            <p><FontAwesomeIcon icon={faStar}/>5(6)
+              Online
+            </p>
           </Card.Title>
           <Card.Text>
             Life lessons with katie Zaferes
@@ -45,13 +47,15 @@ export default function Cardgroup () {
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
           <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+            <p><FontAwesomeIcon icon={faStar} /> 5(30)
+              Online
+            </p>
           </Card.Title>
           <Card.Text>
             Learn Wedding Photography
           </Card.Text>
           <Card.Text>
-          <strong> From $125</strong> / person
+            <strong> From $125</strong> / person
           </Card.Text>
         </Card.Body>
       </Card>
@@ -60,7 +64,9 @@ export default function Cardgroup () {
         <AdvancedImage cldImg={myImage} />
         <Card.Body>
           <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+            <p><FontAwesomeIcon icon={faStar} /> 4.8(2)
+              Norway
+            </p>
           </Card.Title>
           <Card.Text>
             Group Mountain Biking

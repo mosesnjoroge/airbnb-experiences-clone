@@ -1,7 +1,7 @@
 import './App.css';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import Cardgroup from './components/Cardgroup';
+import ExperienceCards from './components/Experiencecards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -11,8 +11,7 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <Cardgroup>
-      </Cardgroup>
+      <ExperienceCards/>
     </div>
   );
 }
