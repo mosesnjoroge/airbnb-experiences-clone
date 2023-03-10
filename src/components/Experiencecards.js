@@ -6,8 +6,9 @@ import {AdvancedImage} from '@cloudinary/react';
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { Badge } from "react-bootstrap";
 
-export default function Cardgroup () {
+export default function ExperienceCards () {
 
   // Create a Cloudinary instance and setting cloud name.
   const cld = new Cloudinary({
@@ -24,43 +25,51 @@ export default function Cardgroup () {
 
   return (
     <CardGroup className = 'container'>
-      <Card>
+      <Card className="card-layout border-0">
         {/* cloudinary render image */}
-        <AdvancedImage cldImg={myImage} />
+          <AdvancedImage cldImg={myImage} className = 'image-layout'/>
+          <Badge bg="light" text="dark" className="overlay-text">
+            SOLD OUT
+          </Badge>
         <Card.Body>
-
           <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar}/>5(6)
+              Online
           </Card.Title>
           <Card.Text>
             Life lessons with katie Zaferes
           </Card.Text>
           <Card.Text>
-          <strong> From $136</strong> / person
+            <strong> From $136</strong> / person
           </Card.Text>
         </Card.Body>
       </Card>
 
-      <Card>
-        <AdvancedImage cldImg={myImage} />
+      <Card className="card-layout border-0">
+        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
+        <Badge bg="light" text="dark" className="overlay-text">
+          ONLINE
+        </Badge>
         <Card.Body>
           <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} /> 5(30)
+            Online
           </Card.Title>
           <Card.Text>
             Learn Wedding Photography
           </Card.Text>
           <Card.Text>
-          <strong> From $125</strong> / person
+            <strong> From $125</strong> / person
           </Card.Text>
         </Card.Body>
       </Card>
 
-      <Card>
-        <AdvancedImage cldImg={myImage} />
+      <Card className="card-layout border-0">
+        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
         <Card.Body>
-          <Card.Title>
-            <FontAwesomeIcon icon={faStar} />
+          <Card.Title className="title-reposition">
+            <FontAwesomeIcon icon={faStar} /> 4.8(2)
+            Norway
           </Card.Title>
           <Card.Text>
             Group Mountain Biking
