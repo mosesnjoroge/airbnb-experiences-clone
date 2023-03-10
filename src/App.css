@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+
+.overlay-text {
+  position: relative;
+  bottom: 157px;
+  width: min-content;
+}
+
+.card-layout {
+  margin-right: 10px;
+}
+
+.image-layout {
+  border-radius: 5px;
+}
+
+.title-reposition {
+  margin-top: 18px;
+}

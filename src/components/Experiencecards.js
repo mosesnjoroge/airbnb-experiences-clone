@@ -6,6 +6,7 @@ import {AdvancedImage} from '@cloudinary/react';
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { Badge } from "react-bootstrap";
 
 export default function ExperienceCards () {
 
@@ -24,14 +25,16 @@ export default function ExperienceCards () {
 
   return (
     <CardGroup className = 'container'>
-      <Card>
+      <Card className="card-layout border-0">
         {/* cloudinary render image */}
-        <AdvancedImage cldImg={myImage} />
+          <AdvancedImage cldImg={myImage} className = 'image-layout'/>
+          <Badge bg="light" text="dark" className="overlay-text">
+            SOLD OUT
+          </Badge>
         <Card.Body>
           <Card.Title>
-            <p><FontAwesomeIcon icon={faStar}/>5(6)
+            <FontAwesomeIcon icon={faStar}/>5(6)
               Online
-            </p>
           </Card.Title>
           <Card.Text>
             Life lessons with katie Zaferes
@@ -42,13 +45,15 @@ export default function ExperienceCards () {
         </Card.Body>
       </Card>
 
-      <Card>
-        <AdvancedImage cldImg={myImage} />
+      <Card className="card-layout border-0">
+        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
+        <Badge bg="light" text="dark" className="overlay-text">
+          ONLINE
+        </Badge>
         <Card.Body>
           <Card.Title>
-            <p><FontAwesomeIcon icon={faStar} /> 5(30)
-              Online
-            </p>
+            <FontAwesomeIcon icon={faStar} /> 5(30)
+            Online
           </Card.Title>
           <Card.Text>
             Learn Wedding Photography
@@ -59,13 +64,12 @@ export default function ExperienceCards () {
         </Card.Body>
       </Card>
 
-      <Card>
-        <AdvancedImage cldImg={myImage} />
+      <Card className="card-layout border-0">
+        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
         <Card.Body>
-          <Card.Title>
-            <p><FontAwesomeIcon icon={faStar} /> 4.8(2)
-              Norway
-            </p>
+          <Card.Title className="title-reposition">
+            <FontAwesomeIcon icon={faStar} /> 4.8(2)
+            Norway
           </Card.Title>
           <Card.Text>
             Group Mountain Biking
