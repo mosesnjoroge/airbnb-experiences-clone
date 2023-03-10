@@ -1,10 +1,14 @@
 # Airbnb Experiences card clone with react 
 <img width="691" alt="Screenshot 2023-03-10 at 1 34 53 PM" src="https://user-images.githubusercontent.com/102884273/224398610-3d210ab5-d8aa-4e8d-844e-3c06efca7110.png">
-
+## Dependencies
+- FontAwesome-React v5.15.4
+- React-Bootstrap v2.7.2
+- Npm v8.11.0
+- Node v16.15.1
+- The photos used are supplied by the cloudinary api and are used purely as placeholders.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The photos used are the supplied by the cloudinary api and are purely placeholders.
 ## Available Scripts
 
 In the project directory, you can run:
