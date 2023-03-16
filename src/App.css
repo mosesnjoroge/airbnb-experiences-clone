@@ -8,14 +8,17 @@
   width: min-content;
 }
 
-.card-layout {
-  margin-right: 10px;
+.card-experience {
+  width: 175px;
+  font-size: 12px;
+  flex:0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-layout {
-  border-radius: 5px;
-  height: 200px;
-  width: min-content;
+  border-radius: 5px!important;
+  width: 100%!important;
 }
 
 .title-reposition {

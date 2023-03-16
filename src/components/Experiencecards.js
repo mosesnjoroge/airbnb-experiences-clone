@@ -1,11 +1,10 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {AdvancedImage} from '@cloudinary/react';
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { Container } from "react-bootstrap";
+
 
 export default function ExperienceCards (props) {
 
@@ -20,19 +19,19 @@ export default function ExperienceCards (props) {
    const myImage = cld.image('docs/models');
 
   // Resize to 250 x 250 pixels using the 'fill' crop mode.
-   myImage.resize(fill().width(150).height(150));
+   myImage.resize(fill().height(150));
 
   return (
-    <Container className="card-group border-0">
-      <div>
+    <div className="card-experience border-0">
+      <div className = 'image-layout'>
         {/* cloudinary render image */}
-        <AdvancedImage cldImg={myImage} className = 'image-layout card-img-top'/>
+        <AdvancedImage cldImg={myImage} />
 
         {/* <Badge bg="light" text="dark" className="overlay-text"> */}
           {props.status}
         {/* </Badge> */}
       </div>
-      <Card.Body>
+      <div>
         <p>
           <FontAwesomeIcon icon={faStar}/>{props.rating}
           {props.status}
@@ -43,8 +42,8 @@ export default function ExperienceCards (props) {
         <p>
           <strong> From ${props.price}</strong> / person
         </p>
-      </Card.Body>
-    </Container>
+      </div>
+    </div>
   );
 
 }

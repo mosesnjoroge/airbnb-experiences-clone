@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import ExperienceCards from './components/Experiencecards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './data'
+import { Container } from 'react-bootstrap';
 
 function App() {
 
@@ -26,7 +27,9 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      {experienceElements}
+      <Container>
+        {experienceElements}
+      </Container>
     </div>
   );
 }
