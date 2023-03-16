@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import ExperienceCards from './components/Experiencecards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './data'
-import { Container } from 'react-bootstrap';
+import { CardGroup, Container } from 'react-bootstrap';
 
 function App() {
 
@@ -28,7 +28,9 @@ function App() {
       <Nav />
       <Hero />
       <Container>
-        {experienceElements}
+        <CardGroup className = 'd-flex justify-content-around'>
+          {experienceElements}
+        </CardGroup>
       </Container>
     </div>
   );
