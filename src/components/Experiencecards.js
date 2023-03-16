@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { Badge } from "react-bootstrap";
 
-export default function ExperienceCards () {
+export default function ExperienceCards (props) {
 
   // Create a Cloudinary instance and setting cloud name.
   const cld = new Cloudinary({
@@ -29,53 +29,18 @@ export default function ExperienceCards () {
         {/* cloudinary render image */}
           <AdvancedImage cldImg={myImage} className = 'image-layout'/>
           <Badge bg="light" text="dark" className="overlay-text">
-            SOLD OUT
+            {props.status}
           </Badge>
         <Card.Body>
           <Card.Title>
-            <FontAwesomeIcon icon={faStar}/>5(6)
-              Online
+            <FontAwesomeIcon icon={faStar}/>{props.rating}
+            {props.status}
           </Card.Title>
           <Card.Text>
-            Life lessons with katie Zaferes
+            {props.caption}
           </Card.Text>
           <Card.Text>
-            <strong> From $136</strong> / person
-          </Card.Text>
-        </Card.Body>
-      </Card>
-
-      <Card className="card-layout border-0">
-        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
-        <Badge bg="light" text="dark" className="overlay-text">
-          ONLINE
-        </Badge>
-        <Card.Body>
-          <Card.Title>
-            <FontAwesomeIcon icon={faStar} /> 5(30)
-            Online
-          </Card.Title>
-          <Card.Text>
-            Learn Wedding Photography
-          </Card.Text>
-          <Card.Text>
-            <strong> From $125</strong> / person
-          </Card.Text>
-        </Card.Body>
-      </Card>
-
-      <Card className="card-layout border-0">
-        <AdvancedImage cldImg={myImage} className = 'image-layout'/>
-        <Card.Body>
-          <Card.Title className="title-reposition">
-            <FontAwesomeIcon icon={faStar} /> 4.8(2)
-            Norway
-          </Card.Title>
-          <Card.Text>
-            Group Mountain Biking
-          </Card.Text>
-          <Card.Text>
-            <strong> From $50</strong> / person
+            <strong> From ${props.price}</strong> / person
           </Card.Text>
         </Card.Body>
       </Card>
