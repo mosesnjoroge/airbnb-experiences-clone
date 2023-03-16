@@ -5,7 +5,7 @@ import {AdvancedImage} from '@cloudinary/react';
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { Badge, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 export default function ExperienceCards (props) {
 
