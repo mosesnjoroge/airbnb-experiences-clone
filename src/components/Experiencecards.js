@@ -22,23 +22,28 @@ export default function ExperienceCards (props) {
   // Resize to 250 x 250 pixels using the 'fill' crop mode.
    myImage.resize(fill().height(175));
 
+  let badgeText
+  if (props.availability === 0) {
+    badgeText = 'SOLD OUT'
+  } else if (props.location === 'Online'){
+    badgeText = 'ONLINE'
+  }
+
   return (
-    <div className="card-experience border-0">
+    <div className="card-experience border-0 text-center">
       <div className = 'image-layout'>
         {/* cloudinary render image */}
         <AdvancedImage cldImg={myImage} />
 
-        <Badge bg="light" text="dark" className="overlay-text">
-          {props.status}
-        </Badge>
-
+        {badgeText && <div className=" badge overlay-text">{badgeText}</div>}
         <span>
           <FontAwesomeIcon icon={faStar}/>{props.rating}
-          {props.status}
+          {props.location}
         </span>
       </div>
-        <p>{props.caption}</p>
-        <p><strong> From ${props.price}</strong> / person</p>
+        <span>{props.caption}</span>
+        <span><strong> From ${props.price}</strong> / person</span>
+
     </div>
   );
 

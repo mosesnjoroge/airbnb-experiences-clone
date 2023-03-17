@@ -2,7 +2,7 @@ export default [
 
   {
     id: 1,
-    availability: 'SOLD OUT',
+    availability: 0,
     rating : '5',
     status : 'Online',
     caption:'Life lessons with katie Zaferes',
@@ -10,7 +10,7 @@ export default [
   },
   {
     id: 2,
-    availability: 'ONLINE',
+    availability: 2,
     rating : '5',
     status : 'Online',
     caption:'Learn Wedding Photography',
@@ -20,7 +20,8 @@ export default [
     id: 3,
     availability: '',
     rating : '4.8',
-    status : 'Norway',
+    status : '',
+    location: 'Norway',
     caption:'Group Mountain Biking',
     price : '50'
   }
