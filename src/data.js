@@ -4,7 +4,7 @@ export default [
     id: 1,
     availability: 0,
     rating : '5',
-    status : 'Online',
+    badgeText : '',
     caption:'Life lessons with katie Zaferes',
     price : '136'
   },
@@ -12,7 +12,7 @@ export default [
     id: 2,
     availability: 2,
     rating : '5',
-    status : 'Online',
+    badgeText : '',
     caption:'Learn Wedding Photography',
     price : '125'
   },
@@ -20,7 +20,7 @@ export default [
     id: 3,
     availability: '',
     rating : '4.8',
-    status : '',
+    badgeText : '',
     location: 'Norway',
     caption:'Group Mountain Biking',
     price : '50'
